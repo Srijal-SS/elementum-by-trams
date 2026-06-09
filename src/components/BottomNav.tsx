@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Home, Layers, Briefcase, Phone, HelpCircle } from 'lucide-react';
 
 const navItems = [
-  { label: 'Home',     href: '#home',     icon: Home },
+  { label: 'Home',     href: '/',     icon: Home },
   { label: 'Studio',   href: '#studio',   icon: Layers },
   { label: 'Services', href: '#services', icon: Briefcase },
   { label: 'Contact',  href: '#contact',  icon: Phone },
