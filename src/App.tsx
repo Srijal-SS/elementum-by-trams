@@ -4,6 +4,7 @@ import BottomNav from './components/BottomNav';
 import Footer from './components/Footer';
 import FeatureSplit from './components/FeatureSplit';
 import Offers from './components/Offers';
+import Testimonials from './components/Testimonials';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       </main>
 
       <Offers />
+      <Testimonials />
       <Footer />
       <BottomNav />
     </div>
