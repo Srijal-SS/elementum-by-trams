@@ -9,7 +9,7 @@ const navItems = [
 ];
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-sm border-b border-black/5">
+    <header className="sticky top-0 z-50 bg-white/2 backdrop-blur-sm border-b border-black/5">
       <motion.nav
         className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-4 flex items-center justify-between"
         initial={{ y: -50, opacity: 0 }}

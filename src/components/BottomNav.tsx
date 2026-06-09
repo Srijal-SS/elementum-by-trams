@@ -14,7 +14,7 @@ const BottomNav = () => {
   const [active, setActive] = useState('Home');
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-t border-black/8 pb-safe">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/2 backdrop-blur-md border-t border-black/8 pb-safe">
       <ul className="flex items-stretch justify-around h-16">
         {navItems.map(({ label, href, icon: Icon }) => {
           const isActive = active === label;
