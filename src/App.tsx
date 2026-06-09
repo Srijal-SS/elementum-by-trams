@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import BottomNav from './components/BottomNav';
 import Footer from './components/Footer';
 import FeatureSplit from './components/FeatureSplit';
+import Offers from './components/Offers';
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
         />
 
       </main>
+
+      <Offers />
       <Footer />
       <BottomNav />
     </div>
