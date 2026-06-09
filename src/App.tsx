@@ -1,5 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import BottomNav from './components/BottomNav';
+
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <main>
         <Hero />
       </main>
+      <BottomNav />
     </div>
   );
 }

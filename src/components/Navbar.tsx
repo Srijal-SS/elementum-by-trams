@@ -11,7 +11,10 @@ const Navbar = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <div className="font-syne-mono text-xl sm:text-4xl p-0 m-0 font-bold tracking-tight">Elementum</div>
+        <div className="inline-flex items-center gap-3 font-syne-mono text-xl sm:text-4xl p-0 m-0 font-bold tracking-tight">
+          <img src="/icon1.png" className='w-10 h-10 object-contain bg-gray-200 rounded-[50%]' alt="Logo" />
+          Elementum
+        </div>
 
         <ul className="hidden md:flex items-center gap-8 lg:gap-10">
           {navItems.map((item) => (
