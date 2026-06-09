@@ -12,7 +12,7 @@ const Navbar = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <div className="inline-flex items-center gap-3 font-syne-mono text-xl sm:text-4xl p-0 m-0 font-bold tracking-tight">
-          <img src="/icon1.png" className='w-10 h-10 object-contain bg-gray-200 rounded-[50%]' alt="Logo" />
+          <img src="/icon1.png" className='w-10 h-10 object-contain bg-blue-100 rounded-[50%]' alt="Logo" />
           Elementum
         </div>
 
