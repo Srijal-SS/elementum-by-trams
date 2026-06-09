@@ -28,7 +28,7 @@ const FeatureSplit = ({ reverse = false, title, description, buttonText, imageUr
             {title}
           </h2>
           <p className="text-text-muted leading-relaxed mb-7 text-sm sm:text-base">{description}</p>
-          <button className="group inline-flex items-center gap-2 font-semibold border-b-2 border-black pb-1 hover:opacity-70 transition-opacity text-sm sm:text-base">
+          <button className="group inline-flex items-center gap-2 font-semibold border-b-2 border-black pb-1 cursor-pointer hover:opacity-70 transition-opacity text-sm sm:text-base">
             {buttonText}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </button>

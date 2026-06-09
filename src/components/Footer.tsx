@@ -15,7 +15,7 @@ const Footer = () => {
     {
       title: 'Follow Us',
       links: ['Instagram', 'LinkedIn', 'Youtube', 'Twitter'],
-      hrefs: ['#instagram', '#linkedin', '#youtube', '#twitter'],
+      hrefs: ['https://www.instagram.com/srijal_srivastava_ss/', 'https://www.linkedin.com/in/srijal-srivastava-014010369', '#youtube', '#twitter'],
     },
   ];
 
@@ -37,7 +37,7 @@ const Footer = () => {
           To check your daily operation and more updates from
         </p>
         <motion.button
-          className="bg-black text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-semibold text-sm tracking-wide hover:bg-gray-800 transition-colors"
+          className="bg-black text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full cursor-pointer font-semibold text-sm tracking-wide hover:bg-gray-800 transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -72,6 +72,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href={col.hrefs[i]}
+                      target="_blank"
                       className="text-xs sm:text-sm text-text-muted hover:text-black transition-colors"
                     >
                       {link}
@@ -85,9 +86,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold font-new-gerbil text-sm mb-4 sm:mb-6">Contact Us</h4>
             <ul className="flex flex-col gap-2 sm:gap-3 text-xs sm:text-sm text-text-muted">
-              <li className="leading-relaxed">374FA Tower, Suite 100<br />New York, NY 10011</li>
-              <li>+1 234 567 8901</li>
-              <li>Hello@elementum.com</li>
+              <li className="leading-relaxed">Newton School of Technology, Rishihood University<br />Sonipat, 13101 (Delhi NCR)</li>
+              <li>+91 9565200819</li>
+              <li>contact@elementum.com</li>
             </ul>
           </div>
         </div>
