@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import BottomNav from './components/BottomNav';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Hero />
       </main>
+      <Footer />
       <BottomNav />
     </div>
   );
