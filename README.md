@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# Elementum by Trams
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive marketing/agency website built with React, TypeScript, and Vite. Elementum showcases a studio's brand, services, testimonials, and contact info with smooth animations and a polished UI.
 
-Currently, two official plugins are available:
+## 📁 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+elementum-by-trams/
+├── public/             # Static assets (icons, images)
+├── src/
+│   ├── components/     # Reusable UI components
+│   │   ├── Navbar.tsx        # Sticky top navigation bar
+│   │   ├── BottomNav.tsx     # Mobile bottom navigation bar
+│   │   ├── Hero.tsx          # Landing hero section
+│   │   ├── FeatureSplit.tsx  # Alternating image + text feature rows
+│   │   ├── Offers.tsx        # Services / offers section
+│   │   ├── Testimonials.tsx  # Client testimonials carousel
+│   │   └── Footer.tsx        # Site footer
+│   ├── App.tsx         # Root component — composes all sections
+│   ├── main.tsx        # React entry point
+│   ├── index.css       # Global styles & Tailwind directives
+│   └── App.css         # Component-level base styles
+├── index.html          # HTML shell
+├── vite.config.ts      # Vite configuration
+├── tailwind.config.*   # Tailwind CSS v4 config (via PostCSS)
+├── tsconfig.json       # TypeScript base config
+└── package.json        # Dependencies & scripts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
+### Core Framework
+
+React
+TypeScript
+Vite
+
+### Styling
+
+Tailwind CSS
+PostCSS
+
+### Animation
+Framer Motion
+
+### Icons
+Lucide React
+
+### Linting & Code Quality
+ESLint
+typescript-eslint
+eslint-plugin-react-hooks
+eslint-plugin-react-refresh
+
       // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Features
+
+- **Sticky Navbar** — Frosted-glass top bar with smooth entrance animation; logo links back to homepage
+- **Mobile Bottom Nav** — Fixed bottom navigation for mobile with active state tracking
+- **Hero Section** — Full-width landing area with bold headline and CTA
+- **Feature Split Rows** — Alternating left/right image + text layout for storytelling
+- **Offers Section** — Highlights core service offerings
+- **Testimonials** — Client quotes with a polished card layout
+- **Footer** — Brand info, social links, and site links
+- **Framer Motion Animations** — Entrance animations on navbar and other key elements
+- **Responsive Design** — Tailored layouts for mobile, tablet, and desktop

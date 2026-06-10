@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
           {footerLinks.map((col) => (
             <div key={col.title}>
-              <h4 className="font-semibold font-new-gerbil text-sm mb-4 sm:mb-6">{col.title}</h4>
+              <h4 className="font-semibold font-new-gerbil text-xl mb-4 sm:mb-6">{col.title}</h4>
               <ul className="flex flex-col gap-2 sm:gap-3">
                 {col.links.map((link, i) => (
                   <li key={link}>
@@ -84,7 +84,7 @@ const Footer = () => {
           ))}
 
           <div>
-            <h4 className="font-semibold font-new-gerbil text-sm mb-4 sm:mb-6">Contact Us</h4>
+            <h4 className="font-semibold font-new-gerbil text-xl mb-4 sm:mb-6">Contact Us</h4>
             <ul className="flex flex-col gap-2 sm:gap-3 text-xs sm:text-sm text-text-muted">
               <li className="leading-relaxed">Newton School of Technology, Rishihood University<br />Sonipat, 13101 (Delhi NCR)</li>
               <li>+91 9565200819</li>
