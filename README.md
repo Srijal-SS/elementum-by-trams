@@ -54,7 +54,6 @@ typescript-eslint
 eslint-plugin-react-hooks
 eslint-plugin-react-refresh
 
-      // Enable lint rules for React DOM
 ---
 
 ## Features
