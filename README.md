@@ -67,3 +67,4 @@ eslint-plugin-react-refresh
 - **Footer** — Brand info, social links, and site links
 - **Framer Motion Animations** — Entrance animations on navbar and other key elements
 - **Responsive Design** — Tailored layouts for mobile, tablet, and desktop
+
